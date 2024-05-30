@@ -2,11 +2,6 @@ import cv2
 import time
 import numpy as np
 import threading
-import sys
-import os
-
-parent_dir = os.path.dirname(os.path.dirname(__file__))
-sys.path.append(parent_dir)
 
 from unitree_sdk2py.core.channel import ChannelFactoryInitialize
 from unitree_sdk2py.go2.video.video_client import VideoClient
@@ -25,8 +20,6 @@ video_client.Init()
 sport_client = SportClient()
 sport_client.SetTimeout(10.0)
 sport_client.Init()
-
-#sport_client.Damp()
 
 detector = GestureRecognizer()
 
