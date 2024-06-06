@@ -9,6 +9,8 @@ sport_client = SportClient()
 sport_client.SetTimeout(10.0)
 sport_client.Init()
 
+print("Environment good to go!")
+
 sport_client.StandDown()
 time.sleep(1)
 sport_client.StandUp()
